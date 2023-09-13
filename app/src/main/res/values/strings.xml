@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">PrismetricTestApplication</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="loading">Loading...</string>
+    <string name="com_detail">Company Details</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="haley_lov">Haley lavrence</string>
+    <string name="email_title">Haley.lavrence@gmail.com</string>
+    <string name="logout">Logout</string>
+    <string name="tending">TRENDING</string>
+    <string name="deals">DEALS OF THE DAY</string>
+    <string name="categories">CATEGORIES</string>
+    <string name="men">Men</string>
+    <string name="hradphone">HeadPhone</string>
+    <string name="mentspants">Man\'s Trackpants</string>
+    <string name="backpacks">Backpacks</string>
+    <string name="kurtaset">Kurta set</string>
+    <string name="jewellory">Jewellery</string>
+    <string name="footwear">Footwear</string>
+    <string name="bath">Bath Essential</string>
+
+    <array name="menuOptions">
+        <item>Shipping Policy</item>
+        <item>Returns Policy</item>
+        <item>About us</item>
+        <item>Terms &amp; Conditions</item>
+        <item>Privacy Policy</item>
+        <item>Contact Us</item>
+    </array>
+</resources>

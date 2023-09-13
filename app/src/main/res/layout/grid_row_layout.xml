@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/_136sdp"
+    android:layout_height="@dimen/_150sdp"
+    android:background="@drawable/custom_item_layout"
+    android:orientation="vertical"
+    android:padding="@dimen/_3sdp">
+    <!--
+    grid items for RecyclerView
+    -->
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@mipmap/ic_launcher" />
+
+
+
+    <LinearLayout
+        android:id="@+id/LinearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:gravity="bottom"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/name"
+            style="@style/Style_com_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="ABCD"
+            android:textAlignment="center"
+            android:textColor="#fff"
+            android:textSize="@dimen/_16ssp" />
+
+        <TextView
+            android:id="@+id/price"
+            style="@style/Style_com_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/name"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_3ssp"
+            android:gravity="center"
+            android:text="ABCD"
+            android:textAlignment="center"
+            android:textColor="#fff"
+            android:textSize="@dimen/_12ssp" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

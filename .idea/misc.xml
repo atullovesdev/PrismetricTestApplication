@@ -1,0 +1,28 @@
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Github/PrismetricTestApplication/app/src/main/res/drawable-xxxhdpi/child_selector_myorder.xml" value="0.1125" />
+        <entry key="..\:/Github/PrismetricTestApplication/app/src/main/res/drawable/active_dot.xml" value="0.1125" />
+        <entry key="..\:/Github/PrismetricTestApplication/app/src/main/res/drawable/child_selector_home.xml" value="0.1125" />
+        <entry key="..\:/Github/PrismetricTestApplication/app/src/main/res/drawable/custom_item_layout.xml" value="0.1125" />
+        <entry key="..\:/Github/PrismetricTestApplication/app/src/main/res/layout/activity_home.xml" value="0.16574074074074074" />
+        <entry key="..\:/Github/PrismetricTestApplication/app/src/main/res/layout/my_duo_view_footer.xml" value="0.16574074074074074" />
+        <entry key="..\:/Github/PrismetricTestApplication/app/src/main/res/layout/my_duo_view_header.xml" value="0.16574074074074074" />
+        <entry key="..\:/Github/PrismetricTestApplication/app/src/main/res/layout/my_duo_view_option.xml" value="0.16574074074074074" />
+        <entry key="..\:/Github/PrismetricTestApplication/app/src/main/res/layout/nav_header.xml" value="0.16574074074074074" />
+        <entry key="..\:/Github/PrismetricTestApplication/app/src/main/res/layout/pager_item.xml" value="0.16574074074074074" />
+        <entry key="..\:/Github/PrismetricTestApplication/app/src/main/res/layout/progress_view.xml" value="0.16574074074074074" />
+        <entry key="..\:/Github/PrismetricTestApplication/app/src/main/res/layout/topmodelitem.xml" value="0.16574074074074074" />
+        <entry key="..\:/Github/PrismetricTestApplication/app/src/main/res/menu/drawer_menu.xml" value="0.24353741496598638" />
+        <entry key="..\:/Github/PrismetricTestApplication/app/src/main/res/menu/navigation_menu.xml" value="0.16574074074074074" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="corretto-11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

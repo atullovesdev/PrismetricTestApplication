@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Style_monst_medium_16">
+        <item name="android:fontFamily">@font/montserrat_medium</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/_16ssp</item>
+
+    </style>
+
+    <style name="Style_gmail">
+        <item name="android:fontFamily">@font/montserrat_light</item>
+        <item name="android:textColor">@color/lightblack</item>
+        <item name="android:textSize">@dimen/_10ssp</item>
+
+    </style>
+    <style name="Style_com_detail">
+        <item name="android:fontFamily">@font/montserrat_regular</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/_10ssp</item>
+    </style>
+
+    <style name="Style_phone">
+        <item name="android:fontFamily">@font/montserrat_regular</item>
+        <item name="android:textColor">@color/lightblack</item>
+        <item name="android:textSize">@dimen/_10ssp</item>
+    </style>
+
+
+    <style name="Style_border">
+        <item name="android:textColor">@color/bordercolor</item>
+    </style>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+<style name="AppTheme.NoActionBar">
+<item name="windowActionBar">false</item>
+    <item name="windowNoTitle">true</item>
+</style>
+
+
+</resources>
