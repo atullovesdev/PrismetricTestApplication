@@ -1,16 +1,13 @@
 package com.e.prismetrictestapplication;
 
+import android.app.Activity;
+import android.os.Bundle;
+import android.util.Log;
+import android.widget.Toast;
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-
-import android.app.Activity;
-import android.content.Intent;
-import android.os.Bundle;
-import android.util.Log;
-import android.view.View;
-import android.widget.TextView;
-import android.widget.Toast;
 
 import com.e.prismetrictestapplication.AdapterList.AdapterClass;
 import com.e.prismetrictestapplication.ListModel.ModelList;
@@ -20,34 +17,36 @@ import com.google.gson.reflect.TypeToken;
 
 import java.util.List;
 
+/**
+ * This is Main Activity created for handles ui based logics.
+ *
+ * @author Atu Mishra
+ */
 public class MainActivity extends AppCompatActivity {
-private static RecyclerView recyclerView;
-private static AdapterClass adapterClass;
+    private static RecyclerView recyclerView;
+    private static AdapterClass adapterClass;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        recyclerView=findViewById(R.id.recyclerview);
+        recyclerView = findViewById(R.id.recyclerview);
 
 
-
-
-
-                if (Utility.INSTANCE.isNetworkAvailable(MainActivity.this)) {
-                    Toast toast = Toast.makeText(getApplicationContext(), "Network is available", Toast.LENGTH_SHORT);
-                    toast.show();
-                    Utility.INSTANCE.locationDetails(MainActivity.this);
-                    Recyclerview();
-                } else {
-                    Toast toast = Toast.makeText(getApplicationContext(), "Network is not available", Toast.LENGTH_SHORT);
-                    toast.show();
-                }
+        if (Utility.INSTANCE.isNetworkAvailable(MainActivity.this)) {
+            Toast toast = Toast.makeText(getApplicationContext(), "Network is available", Toast.LENGTH_SHORT);
+            toast.show();
+            Utility.INSTANCE.locationDetails(MainActivity.this);
+            Recyclerview();
+        } else {
+            Toast toast = Toast.makeText(getApplicationContext(), "Network is not available", Toast.LENGTH_SHORT);
+            toast.show();
+        }
     }
 
 
-    private void Recyclerview(){
-        LinearLayoutManager llm=new LinearLayoutManager(getApplicationContext(),LinearLayoutManager.VERTICAL,false);
+    private void Recyclerview() {
+        LinearLayoutManager llm = new LinearLayoutManager(getApplicationContext(), LinearLayoutManager.VERTICAL, false);
         recyclerView.setLayoutManager(llm);
 
     }
@@ -58,11 +57,11 @@ private static AdapterClass adapterClass;
             Gson gson = new Gson();
             List<ModelList> modelRespList = gson.fromJson(response, new TypeToken<List<ModelList>>() {
             }.getType());
-            Log.d("sonubhai",modelRespList.get(0).getAddress().getGeo().getLat());
+            Log.d("sonubhai", modelRespList.get(0).getAddress().getGeo().getLat());
 
-         adapterClass=new AdapterClass(activity.getApplicationContext(), modelRespList);
-         recyclerView.setAdapter(adapterClass);
-         adapterClass.notifyDataSetChanged();
+            adapterClass = new AdapterClass(activity.getApplicationContext(), modelRespList);
+            recyclerView.setAdapter(adapterClass);
+            adapterClass.notifyDataSetChanged();
 
 
 //            locAdapter = new ListAdapter(activity, collaboratorResponse);
