@@ -5,8 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <nl.psdcompany.duonavigationdrawer.views.DuoMenuView xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
+    <nl.psdcompany.duonavigationdrawer.views.DuoMenuView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
@@ -32,26 +31,27 @@
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="@dimen/_15sdp"
-                android:src="@drawable/wishlist"
+                android:layout_alignParentTop="true"
+                android:layout_gravity="end"
                 android:layout_margin="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
                 android:adjustViewBounds="true"
                 android:background="@null"
-               android:layout_marginRight="@dimen/_10sdp"
-                android:layout_gravity="end"
                 android:cropToPadding="true"
-                android:layout_alignParentTop="true"
-                android:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+                android:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                android:src="@drawable/wishlist" />
+
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="@dimen/_15sdp"
-                android:src="@drawable/shopping_bag"
+                android:layout_alignParentTop="true"
+                android:layout_gravity="end"
+                android:layout_margin="@dimen/_10sdp"
                 android:adjustViewBounds="true"
                 android:background="@null"
-                android:layout_margin="@dimen/_10sdp"
                 android:cropToPadding="true"
-                android:layout_gravity="end"
-                android:layout_alignParentTop="true"
-                android:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+                android:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                android:src="@drawable/shopping_bag" />
 
 
         </androidx.appcompat.widget.Toolbar>
